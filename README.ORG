@@ -1,0 +1,13 @@
+
+* ip address: http://54.226.88.89:9000/ not yet a service
+
+* ssh is on my pc
+
+* First hello world project
+** start project with leiningen: lein new app clojurescript-hello-world
+** compile: clj -M --main cljs.main --repl-opts "{:launch-browser false}" --compile hello-world.core --repl
+
+* running a server with systemd
+** ->
+** -> make the domain work
+** install a certificate
