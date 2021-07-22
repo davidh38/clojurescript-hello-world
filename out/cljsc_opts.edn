@@ -1,1 +1,1 @@
-{:target :nodejs, :output-to "main.js", :main hello-world.core, :output-dir "out", :aot-cache true}
+{:browser-repl true, :main hello-world.core, :output-to "out/main.js", :output-dir "out", :aot-cache true}
