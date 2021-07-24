@@ -49,6 +49,8 @@ Where do i see the output of permission denied from systemd?
 Why do i need sudo for port 80
 How do use port 80 with clj {:port}
 https with ipv4 -> https needs certifate -> encrypt -> domain
+what is a CDN
+
 
 * Certbot
 ** www.logical-fallacies.org
@@ -58,3 +60,9 @@ certbots needs a domain
 
 * DOM manipulation
 https://www.tutorialspoint.com/how-to-add-a-new-element-to-html-dom-in-javascript
+
+* next steps:
+- use css
+- write further the vanilla code
+- start using react
+- build once with react native
