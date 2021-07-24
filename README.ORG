@@ -55,3 +55,6 @@ https with ipv4 -> https needs certifate -> encrypt -> domain
 18.209.189.3
 use: sudo certbot certonly --standalone
 certbots needs a domain
+
+* DOM manipulation
+https://www.tutorialspoint.com/how-to-add-a-new-element-to-html-dom-in-javascript
