@@ -10,8 +10,7 @@
 ** install a certificate
 ** make a pipeline with codecommit
 
-
-
+** install java, install clojure, run clojure ...-M --main cljs ...
 
 /etc/systemd/system
 
