@@ -66,9 +66,12 @@
         <p class="text-sm font-medium text-slate-900">John</p>
         <p class="text-sm text-slate-500 truncate">his@email.com</p>
 </div>
-<button onclick="evaluate_user();" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">Evaluate</button>
+<button onclick="evaluate_user(0);" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">Evaluate</button>
     </td>
-        <td>fast learner, quick runner</td>
+        <td>
+
+    <ul id="messages1"></ul>
+        </td>
       </tr>
       <tr class="odd:bg-white even:bg-slate-100 ">
     <td class="flex py-4 first:pt-0 last:pb-0 ">
@@ -77,11 +80,11 @@
         <p class="text-sm font-medium text-slate-900">Steve</p>
         <p class="text-sm text-slate-500 truncate">his@email.com</p>
       </div>
-<button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">Evaluate</button>
+<button onClick="evaluate_user(1);" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">Evaluate</button>
 
     </td>
         <td>
-    <ul id="messages"></ul>
+    <ul id="messages2"></ul>
 </td>
       </tr>
 
@@ -92,10 +95,13 @@
         <p class="text-sm font-medium text-slate-900">Julia</p>
         <p class="text-sm text-slate-500 truncate">his@email.com</p>
       </div>
-<button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">Evaluate</button>
+<button onclick="evaluate_user(2); "class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">Evaluate</button>
 
     </td>
-        <td>fast learner, quick runner</td>
+        <td>
+
+    <ul id="messages3"></ul>
+        </td>
       </tr>
 
       <tr class="odd:bg-white even:bg-slate-100 ">
@@ -105,10 +111,13 @@
         <p class="text-sm font-medium text-slate-900">Steffi</p>
         <p class="text-sm text-slate-500 truncate">his@email.com</p>
       </div>
-<button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Evaluate</button>
+<button onclick="evaluate_user(3);" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Evaluate</button>
 
     </td>
-        <td>fast learner, quick runner</td>
+        <td>
+
+    <ul id="messages4"></ul>
+        </td>
       </tr>
 
       <tr class="odd:bg-white even:bg-slate-100">
@@ -118,10 +127,13 @@
         <p class="text-sm font-medium text-slate-900">David</p>
         <p class="text-sm text-slate-500 truncate">his@email.com</p>
       </div>
-<button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">Evaluate</button>
+<button onclick="evaluate_user(4);" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">Evaluate</button>
 
     </td>
-        <td>fast learner, quick runner </td>
+        <td>
+
+    <ul id="messages5"></ul>
+        </td>
       </tr>
 
 
@@ -177,7 +189,7 @@
     <form id="form" action="">
       <input id="input" class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" autocomplete="off" />
         <button type="button" onClick="cancel();" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">Cancel</button>
-        <button class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">Assign</button>
+        <button onclick=cancel() class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">Assign</button>
     </form>
 
       </div>
@@ -192,33 +204,56 @@
 <script src="/socket.io/socket.io.js"></script>
 <script>
   var socket = io();
-  var messages = document.getElementById('messages');
+  var messages1 = document.getElementById('messages1');
+  var messages2 = document.getElementById('messages2');
+  var messages3 = document.getElementById('messages3');
+  var messages4 = document.getElementById('messages4');
+  var messages5 = document.getElementById('messages5');
   var form = document.getElementById('form');
   var input = document.getElementById('input');
+  var lastEval;
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     if (input.value) {
-      socket.emit('chat message', input.value);
+      test = lastEval + input.value
+      socket.emit('chat message', test);
       input.value = '';
     }
   });
 
   socket.on('chat message', function(msg) {
-    var item = document.createElement('li');
-    item.textContent = msg;
-    messages.appendChild(item);
+//    var item = document.createElement('div');
+ //   item.textContent = msg;
+    console.log(msg.toString()) 
+    console.log(typeof msg);
+    console.log("allfune")
+//    console.log(msg[1]);
+    if (typeof msg == 'string'){
+    test = JSON.parse(msg);
+    messages1.textContent = test[0];
+    messages2.textContent = test[1];
+    messages3.textContent = test[2];
+    messages4.textContent = test[3];
+    messages5.textContent = test[4];
+  }
+    //console.log(test["1"])
+//    console.log(Map(msg)["1"])
+     
+    //messages.appendChild(item);
     window.scrollTo(0, document.body.scrollHeight);
   });
 
-function evaluate_user() {
+function evaluate_user(test) {
   console.log("bonjour");
+  lastEval = test;
   document.getElementById("popup").style.display = "block";
 
 }
 
 function openForm() {
   document.getElementById("loginPopup").style.display = "block";
+
 }
 function cancel() {
   document.getElementById("popup").style.display = "none";
