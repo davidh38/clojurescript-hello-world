@@ -1,0 +1,36 @@
+
+<html>
+    <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript">
+
+
+
+        window.onload = function () {
+            document.getElementById('result').innerHTML = "test";
+        };
+
+// Make a request for a user with a given ID
+        axios.get('https://www.google.com',{
+          headers: {"Access-Control-Allow-Origin": "*",
+        responseType: "json",
+                 }
+
+        })
+  .then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .then(function () {
+    // always executed
+  });
+    </script>
+</head>
+<body>
+    foo = <span style='font-family: monospace' id="result"></span>
+</body>
+</html>

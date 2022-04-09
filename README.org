@@ -1,0 +1,79 @@
+
+
+* ip address: http://18.209.189.3:80/ not yet a service -> still works
+new address: https://s3.eu-central-1.amazonaws.com/logical-fallacies.com/index.html
+* ssh is on my pc
+* first hello world project
+** start project with leiningen: lein new app clojurescript-hello-world
+*** curl -O https://download.clojure.org/install/linux-install-1.11.0.1100.sh
+*** chmod +x linux-install-1.11.0.1100.sh
+*** sudo ./linux-install-1.11.0.1100.sh
+*** sudo yum install rlwrap
+** sudo yum install java
+** install node: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html
+** compile: /usr/local/bin/clojure -M --main cljs.main --repl-opts "{:launch-browser false}" --compile hello-world.core --repl &
+* running a server with systemd
+** make the domain work
+** install a certificate
+** make a pipeline with codecommit
+* the complilated part is in the out folder
+* clj seems to run a webserver
+
+/etc/systemd/system
+
+https://www.shubhamdipt.com/blog/how-to-create-a-systemd-service-in-linux/
+
+[Unit]
+Description=<project description>
+
+[Service]
+User=<user e.g. root>
+WorkingDirectory=<path to your project directory containing your python script>
+ExecStart=/home/user/.virtualenv/bin/python main.py
+Restart=always
+# replace /home/user/.virtualenv/bin/python with your virtualenv and main.py with your script
+
+[Install]
+WantedBy=multi-user.target
+
+Description=<description about this service>
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/clojurescript-hello-world
+ExecStart=clj -M --main cljs.main --repl-opts "{:launch-browser false}" --compile hello-world.core --repl
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+
+* Questions:
+Why do i need sudo for port 80?
+Where do i see the output of permission denied from systemd?
+Why do i need sudo for port 80
+How do use port 80 with clj {:port}
+https with ipv4 -> https needs certifate -> encrypt -> domain
+what is a CDN
+
+* Certbot
+** www.logical-fallacies.org
+18.209.189.3
+use: sudo certbot certonly --standalone
+certbots needs a domain
+
+* DOM manipulation
+https://www.tutorialspoint.com/how-to-add-a-new-element-to-html-dom-in-javascript
+
+* next steps:
+- host app in s3
+- update the website on the system
+- simple jwt
+- tailwind css
+- use css
+- write further the vanilla code
+- make a api call
+- try out socket.io?
+- secure the api call
+- start using react
+- build once with react native

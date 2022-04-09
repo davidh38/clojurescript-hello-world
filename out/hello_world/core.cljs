@@ -7,12 +7,12 @@
 ;;  (.-innerHTML (.getElementById js/document "app"))
 ;;)
 
-(defn create-heading-element [type text]
-  (->>
-   (.createTextNode js/document text)
-   (.appendChild (.createElement js/document type))
-   (.appendChild (.getElementById js/document "app"))
-))
+;;(defn create-heading-element [type text]
+;;  (->>
+;;   (.createTextNode js/document text)
+;;   (.appendChild (.createElement js/document type))
+;;   (.appendChild (.getElementById js/document "app"))
+;;))
 
 
 ;;(defn create-element
@@ -32,7 +32,8 @@
 
 
 (defn init []
-     (create-heading-element "h1" "Loginseite")
+     (println "Hi")
+     ;;(create-heading-element "h1" "Loginseite")
 ;:     (create-element "br")
 ;     (create-element "input" "test")
 ;     (create-heading-element "h5" "Password")
