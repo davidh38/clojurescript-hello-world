@@ -12,6 +12,11 @@ global.map1['2'] = [];
 global.map1['3'] = [];
 global.map1['4'] = [];
 
+process.on('uncaughtException', function (err) {
+  console.error(err);
+  console.log("Node NOT Exiting...");
+});
+
 app.use(express.static('dist'))
 
 app.get('/', (req, res) => {
