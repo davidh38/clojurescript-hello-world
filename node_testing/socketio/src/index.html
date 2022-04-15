@@ -111,10 +111,13 @@
 
               <a href="#" onClick="show_summary_table();" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Summary</a>
 
+              <a href="#" onClick="show_summary_table();" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Attributes</a>
+
 
             </div>
           </div>
         </div>
+
         <div class="hidden md:block">
           <div class="ml-4 flex items-center md:ml-6">
             <button type="button" class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
@@ -214,7 +217,22 @@
       <h1 id="main_title" class="text-3xl font-bold text-gray-900">Evaluation</h1>
     </div>
   </header>
-  <main>
+
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="py-12 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:text-center">
+      <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Peer Assessment</h2>
+      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">A better way to assess your peers.</p>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">Anonymosly assess your peers without hesitation. Help them to improve and help yourself taking all the wonderful information you get from others. </p>
+    </div>
+
+    <div class="mt-10">
+      <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+        <div class="relative">
+          <dt>
+
+
     <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
       <!-- Replace with your content -->
       <div class="px-4 py-6 sm:px-0">
@@ -309,7 +327,6 @@
 </table>
 
 
-
 <table id=summary_table>
   <!-- ... -->
   <tbody>
@@ -396,11 +413,67 @@
 
 
 
-        </div>
+    </div
+      <!-- Replace with your content -->
       </div>
-      <!-- /End replace -->
+      </div>
+
+
+
+          </dt>
+        </div>
+
+
+        <div class="relative">
+          <dt>
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+              <!-- Heroicon name: outline/annotation -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+              </svg>
+            </div>
+            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">No page refresh</p>
+          </dt>
+          <dd class="mt-2 ml-16 text-base text-gray-500">
+            No page refreshing needed, when a new evaluation is done.
+          </dd>
+          </br>
+          <dt>
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+              <!-- Heroicon name: outline/annotation -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+              </svg>
+            </div>
+            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Anonym</p>
+          </dt>
+          <dd class="mt-2 ml-16 text-base text-gray-500">
+            Your evaluation is 100% anonym.
+          </dd>
+
+         </br>
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+              <!-- Heroicon name: outline/annotation -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+              </svg>
+            </div>
+            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Attributes</p>
+          </dt>
+          <dd class="mt-2 ml-16 text-base text-gray-500">
+            Set your own attributes.
+          </dd>
+
+
+        </div>
+
+      </dl>
     </div>
-  </main>
+  </div>
+</div>
+
+
+
 </div>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
