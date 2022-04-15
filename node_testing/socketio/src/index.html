@@ -52,6 +52,9 @@
 #summary_table {
   display: none;
 }
+#attributes_table {
+  display: none;
+}
 #dropdown {
   display: none;
 }
@@ -107,11 +110,11 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#" onClick="show_persons_table();" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Evaluation</a>
+              <a href="#per" onClick="show_persons_table();" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Evaluation</a>
 
-              <a href="#" onClick="show_summary_table();" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Summary</a>
+              <a href="#sum" onClick="show_summary_table();" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Summary</a>
 
-              <a href="#" onClick="show_summary_table();" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Attributes</a>
+              <a href="#att" onClick="show_attributes_table();" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Attributes</a>
 
 
             </div>
@@ -238,8 +241,7 @@
       <div class="px-4 py-6 sm:px-0">
         <div class="border-4 border-dashed border-gray-200 rounded-lg h-96">
 
-
-<table id=person_table>
+<table id="person_table">
   <!-- ... -->
   <tbody>
       <!-- Use a white background for odd rows, and slate-100 for even rows -->
@@ -327,7 +329,8 @@
 </table>
 
 
-<table id=summary_table>
+
+<table id="summary_table">
   <!-- ... -->
   <tbody>
       <!-- Use a white background for odd rows, and slate-100 for even rows -->
@@ -411,13 +414,15 @@
   </tbody>
 </table>
 
+  <ul>
+    <li id="attributes_table" >Not implemented yet</li>
+  </ul>
 
 
     </div
       <!-- Replace with your content -->
       </div>
       </div>
-
 
 
           </dt>

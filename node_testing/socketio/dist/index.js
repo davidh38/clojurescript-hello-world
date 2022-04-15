@@ -183,16 +183,34 @@ function check(param) {
   }
 }
 
-function show_summary_table() {
+
+function show_attributes_table(){
+
+  console.log("test");
+  document.getElementById("attributes_table").style.display = "block";
+
   document.getElementById("person_table").style.display = "none";
+  document.getElementById("summary_table").style.display = "none";
+
+  document.getElementById("main_title").innerHTML = "Attributes";
+
+}
+
+
+
+function show_summary_table() {
   document.getElementById("summary_table").style.display = "block";
+
+  document.getElementById("person_table").style.display = "none";
+  document.getElementById("attributes_table").style.display = "none";
 
   document.getElementById("main_title").innerHTML = "Summary";
 }
 
 function show_persons_table() {
-  document.getElementById("summary_table").style.display = "none";
   document.getElementById("person_table").style.display = "block";
+  document.getElementById("summary_table").style.display = "none";
+  document.getElementById("attributes_table").style.display = "none";
 
   document.getElementById("main_title").innerHTML = "Evaluation";
 }
