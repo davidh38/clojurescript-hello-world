@@ -39,8 +39,8 @@ io.on('connection', (socket) => {
     console.log(msg[0])
     global.map1[msg[0]].push(msg.slice(1));
     msg = global.map1;
-    console.log(msg);
     const a = JSON.stringify(msg);
+    console.log(a);
     io.emit('chat message', a
  );
   });
