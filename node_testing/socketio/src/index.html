@@ -105,9 +105,11 @@
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
           <div class="flex-shrink-0">
+
             <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
           </div>
           <div class="hidden md:block">
+
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a href="#per" onClick="show_persons_table();" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Evaluation</a>
@@ -122,7 +124,10 @@
         </div>
 
         <div class="hidden md:block">
-          <div class="ml-4 flex items-center md:ml-6">
+          <div class="ml-4 flex space-x-5 items-center md:ml-6 ">
+
+            <img src="index.svg" class="h-100 w-100 "> </img>
+
             <button type="button" class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
               <span class="sr-only">View notifications</span>
               <!-- Heroicon name: outline/bell -->
@@ -241,13 +246,13 @@
       <div class="px-4 py-6 sm:px-0">
         <div class="border-4 border-dashed border-gray-200 rounded-lg h-96">
 
-<table id="person_table">
+<table id="person_table" >
   <!-- ... -->
   <tbody>
       <!-- Use a white background for odd rows, and slate-100 for even rows -->
       <tr class="even:bg-white even:bg-slate-100 :first-of-type">
-        <td class="font-bold">Person</td>
-        <td class="font-bold">Evaluation</td>
+        <td class="font-bold px-40 py-2">Person</td>
+        <td class="font-bold px-2 py-2">Evaluation</td>
       </tr>
       <tr class="odd:bg-white even:bg-slate-100 ">
     <td class="flex py-4 first:pt-0 last:pb-0 ">
@@ -336,7 +341,7 @@
       <!-- Use a white background for odd rows, and slate-100 for even rows -->
       <tr class="even:bg-white even:bg-slate-100 :first-of-type">
         <td class="font-bold">Person</td>
-        <td class="font-bold">Attributes</td>
+        <td class="font-bold w-1/2 py-2">Attributes</td>
       </tr>
       <tr class="odd:bg-white even:bg-slate-100 ">
     <td class="flex py-4 first:pt-0 last:pb-0 ">
@@ -427,7 +432,6 @@
 
           </dt>
         </div>
-
 
         <div class="relative">
           <dt>
@@ -670,11 +674,11 @@
   </div>
 </div>
 
-
 <!-- <h1 class="text-4xl font-bold underline">
     Hello world!
   </h1>
 -->
+
 <script src="/socket.io/socket.io.js"></script>
 <script src="./index.js" type="text/javascript"></script>
 <script>

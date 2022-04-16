@@ -20,6 +20,10 @@ process.on('uncaughtException', function (err) {
 app.use(express.static('dist'))
 
 app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/src/login.html');
+});
+
+app.get('/login.html', (req, res) => {
   res.sendFile(__dirname + '/src/index.html');
 });
 
