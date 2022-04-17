@@ -1,11 +1,11 @@
 
 
-const myelement =  React.createElement("h1",
-{
-  className : 'container',
-  children: "hello world"
-})
+//const myelement =  React.createElement("h1",
+//{
+//  className : 'container',
+//  children: "hello world"
+//})
 
 ReactDOM
   .createRoot(document.getElementById('root'))
-  .render(myelement);
+  .render(<h1>test</h1>);
