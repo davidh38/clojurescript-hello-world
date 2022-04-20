@@ -12,10 +12,69 @@
     <!-- This element's contents will be replaced with your component. -->
 </div>
 
-<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-<script type="text/babel" src="./index.js">
+<script type="text/babel">
+
+//import {render} from "react-dom";
+//const test = ReactDOM.createRoot(document.getElementById('root'))
+
+//test.render(<h1>test1</h1>);
+//
+//
+//
+
+//function Welcome(props)
+//{  return {false &&
+//            <h1>Hello, {props.name}</h1>;}
+//}
+//
+//    
+//const element = <Welcome name="Sara" />;
+
+ function Testthis(props){
+const { useState } = React
+  const [color, setColor] = useState("red");
+ const a = props.show;
+ const shoot = () => {
+
+    alert("Great Shot!" + color);
+  }
+
+// return <li>aoeu2</li>
+    if (a){
+    return <li>aoeu3</li>
+    }
+    else return <button onClick={() => shoot("Goal!")}>Take the shot!</button>
+
+
+    
+  }
+
+  
+class ShoppingList extends React.Component {
+
+  render() {
+    
+    return (
+      <div className="shopping-list">
+        <h1>Shopping List for {this.props.name}</h1>
+        <ul>
+        <li style  ={{color: "green"}}>{this.props.hey}</li>
+          <li>WhatsApp</li>
+          <li>Oculus</li>
+          <Testthis show={false}></Testthis>
+        </ul>
+      </div>
+    );
+  }
+}
+
+//const shop = ShoppingList(root);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(<ShoppingList name="hey there" hey="ho"></ShoppingList>);
 
 
 </script>
